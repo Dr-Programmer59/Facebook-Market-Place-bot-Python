@@ -71,7 +71,7 @@ def PostProduct(csvfile,status,email,password):
             status.setText(f"Setting Product {i+1}")
             time.sleep(1)
             driver.get("https://www.facebook.com/marketplace/create/items")
-            time.sleep(1)
+            time.sleep(4)
             images=driver.execute_script("""
             const fileInputs = document.getElementsByTagName("input");
 
